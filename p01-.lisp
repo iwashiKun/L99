@@ -22,9 +22,11 @@
       (l99-p03 (cdr lst) (decf pos))))
 
 ;; l99-p04
-(defun l99-p04 (lst lng)
+(defun l99-p04 (lst)
+  (p04-itel lst 0))
+(defun p04-itel (lst lng)
   (if (equal '() lst)
       lng
       (progn
         (incf lng)
-        (l99-p04 (cdr lst) lng))))
+        (p04-itel (cdr lst) lng))))
