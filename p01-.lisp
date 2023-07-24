@@ -22,6 +22,7 @@
       (l99-p03 (cdr lst) (decf pos))))
 
 ;; l99-p04
+;; TODO: looks bad
 (defun l99-p04 (lst)
   (p04-itel lst 0))
 (defun p04-itel (lst lng)
@@ -30,3 +31,6 @@
       (progn
         (incf lng)
         (p04-itel (cdr lst) lng))))
+
+;; l99-p05
+(defun l99-p05)
