@@ -1,4 +1,4 @@
-;; L-99
+; L-99
 ;; https://www.ic.unicamp.br/~meidanis/courses/mc336/problemas-lisp/L-99_Ninety-Nine_Lisp_Problems.html
 ;
 ;; p01-
@@ -16,7 +16,7 @@
       (l99-p02 (cdr lst))))
 
 ;; l99-p03
-(defun l99-p03 (lst pos)
+(Defun l99-p03 (lst pos)
   (if (equal pos 1)
       (car lst)
       (l99-p03 (cdr lst) (decf pos))))
@@ -33,4 +33,15 @@
         (p04-itel (cdr lst) lng))))
 
 ;; l99-p05
-(defun l99-p05)
+;; P05 (*) Reverse a list.
+;; i can not solve...
+(defun l99-p05 (lst rv)
+  (if (eq lst nil)
+      rv
+      (l99-p05 (cdr lst) (cons (car lst) rv))))
+
+
+
+
+;; l99-p06
+;; P06 (*) Find out whether a list is a palindrome.
