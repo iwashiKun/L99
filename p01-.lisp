@@ -40,8 +40,7 @@
       rv
       (l99-p05 (cdr lst) (cons (car lst) rv))))
 
-
-
-
 ;; l99-p06
 ;; P06 (*) Find out whether a list is a palindrome.
+(defun l99-p06 (lst)
+  (equal lst (l99-p05 lst nil)))
